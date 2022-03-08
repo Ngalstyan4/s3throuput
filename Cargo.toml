@@ -1,0 +1,12 @@
+[package]
+name = "s3test"
+version = "0.1.0"
+authors = ["Narek Galstyan <narekg@berkeley.edu>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rust-s3 = {version="0.26", features = ["no-verify-ssl"], default-features = false}
+tokio = "0.2.25"
+futures="0.3.16"
